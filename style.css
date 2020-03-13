@@ -1,0 +1,495 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    display: flex;
+    font-family: open sans,sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F3F5F9;
+    height: 100vh;
+    width: 17%;
+    min-width: 15rem;
+}
+
+#identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    flex: 2;
+
+}
+
+#identity img{
+    width: 7rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 2rem;
+
+}
+
+#identity h3 {
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+}
+
+#identity p {
+    font-style: italic;
+}
+
+nav{
+    flex: 5;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    margin: 0 5rem;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #292c40;
+    display: flex;
+}
+
+nav ul li img{
+    width: 20px;
+    height: auto;
+    margin-right: 0.3rem;
+    display: none;
+    
+}
+
+.is-hidden{
+    display: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.link-style{
+    display: inline-block;
+    color: #292c40;
+    text-decoration: none;
+}
+
+.link-style::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .7s;
+}
+
+.link-style:hover::after {
+    width: 100%;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    background-color: #f1f1f1;
+    
+}
+
+footer img {
+    margin: auto;
+    filter: drop-shadow(0 0 0.2rem grey);
+}
+
+footer img:hover{
+    cursor: pointer;
+    width: 30px;
+    transition: width .3s;
+}
+
+.is-hidden{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    background-image: url("https://wallpaperaccess.com/full/99810.jpg");
+    transition: all 2s ease;
+    background-position-x: 50%;
+    background-position-y: 0;
+    
+}
+
+#ACCUEIL {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    transition: opacity 1s;
+    
+}
+
+
+
+
+.test {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  letter-spacing: 0.7rem;
+  filter: drop-shadow(0 0 0.3rem grey);
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+
+ .test::before
+  {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.test::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.draw {
+    transition: color 0.25s;
+}
+  .draw::before
+   {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::after{
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+
+
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+ .draw:hover {
+    color: white;
+  }
+
+  
+ .draw:hover::before
+   {
+    width: 100%;
+    height: 100%;
+  }
+  .draw:hover::after{
+    width: 100%;
+    height: 100%;
+  }
+
+  .draw:hover::before {
+    border-top-color: white; 
+    border-right-color: white;
+    transition:
+      width 0.25s ease-out, 
+      height 0.25s ease-out 0.25s; 
+  }
+
+  .draw:hover::after {
+    border-bottom-color: white;
+    border-left-color: white;
+    transition:
+      border-color 0s ease-out 0.5s, 
+      width 0.25s ease-out 0.5s, 
+      height 0.25s ease-out 0.75s; 
+  }
+
+
+#INFOS{
+    height: 100vh;
+    display: none;
+    flex-wrap: wrap;
+    transition: opacity 1s;
+    align-items: center;
+    
+    
+}
+
+.intro{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: 'Baloo Chettan 2', cursive;
+    /* border: 2px solid white; */
+    padding: 3rem;
+    /* background-image: url('https://santeac.fr/wp-content/uploads/2016/03/Light-Grey-Background-Tumblr-8.jpg'), url('img/backimg.jpg');
+    background-blend-mode: multiply; */
+    transition: all 0.5s;
+    
+}
+
+
+.intro h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.intro p{
+    margin-top: 1rem;
+    
+}
+
+.intro p a {
+    color: white;
+    filter: drop-shadow(0 0 .3rem white);
+}
+
+.container-section{
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+    
+}
+
+
+
+
+
+#COMPÉTENCES{
+    height: 100vh;
+    display: none;
+    transition: opacity 1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-bar-container{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin: 0 auto;
+    height: auto;
+    /* border: 2px solid white; */
+    padding: 3rem;
+    /* background-image: url('https://santeac.fr/wp-content/uploads/2016/03/Light-Grey-Background-Tumblr-8.jpg'), url('img/backimg.jpg');
+    background-blend-mode: multiply; */
+    transition: all 0.5s;
+    color: white;
+    text-align: left;
+}
+
+.bar{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.bar img{
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.skills-bar{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #FFD93D;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.skills-bar p{
+    margin-left: 2rem;
+    padding-top: 0.2rem;
+}
+
+.skills-bar img{
+    width: 3rem;
+}
+
+.javascript-skill{
+    width: 0;
+    height: 100%;
+    background-color: #FFD93D;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: width 2s ease;
+}
+
+.html-skill{
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #006DB5 , #28A4D9);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: width 3s ease;
+}
+
+.react-skill{
+    width: 0;
+    height: 100%;
+    background-color: #61DAFB;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: width 1s ease;
+}
+
+.node-skill{
+    width: 0;
+    height: 100%;
+    background-color: #8CC03D;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: width 2s ease;
+}
+
+
+#EXPÉRIENCES{
+    height: 100vh;
+    display: none;
+    transition: opacity 1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-xp{
+    width: 50%;
+    height: auto;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+}
+
+#PROJETS{
+    height: 100vh;
+    display: none;
+    transition: opacity 1s;
+}
+#BLOG{
+    height: 100vh;
+    display: none;
+    transition: opacity 1s;
+}
+
+.oclock{
+    display: none;
+    opacity: 0;
+    transition: all .5s;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    font-size: 1.4rem;
+    
+    
+}
+
+.oclock-txt{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.2rem;
+    text-align: justify;
+    background-image: url('https://santeac.fr/wp-content/uploads/2016/03/Light-Grey-Background-Tumblr-8.jpg'), url('img/backimg.jpg');
+    background-blend-mode: multiply;
+    padding: 2rem;
+    overflow-y: scroll;
+    
+    height: 22rem;
+}
+
+/* SCROLLBAR */
+.oclock-txt::-webkit-scrollbar {
+    width: 8px;
+    
+  }
+  
+  /* Track */
+  .oclock-txt::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  .oclock-txt::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .oclock-txt::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.oclock h3{
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.oclock-txt p{
+    margin-top: 2rem;
+}
+
+.oclock h3 img{
+    margin-right: 1rem;
+}
+
+.oclock img {
+    width: 30rem;
+}
+
+.oclock h3 img{
+    width: 2rem;
+}
+
+
+
